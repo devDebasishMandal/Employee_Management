@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+<body>
+    <div class="header">
+            <h1>Employee Management</h1>
+    </div>
     <div class="root">
-        <div class="child" id="form">
-            <form action="#">
-            <input type="text" class="info">
-            <input type="text" class="info">
-            <input type="text" class="info">
-            <input type="text" class="info">
-            <input type="text" class="info">
+
+        <div class="child form-details">
+            <h2>Employee Details</h2>
+            <form class="form" id="form">
+
+                <input type="text" class="info" placeholder="Employee Name" name="name" required>
+
+                <input type="email" class="info" placeholder="Employee Email" name="email" required>
+
+                <input type="text" class="info" placeholder="Employee ID" name="emp_id" required>
+
+                <input type="text" class="info" placeholder="Designation" name="designation" required>
+
+                <input type="text" class="info" placeholder="Compony" name="compony">
+
+                <button id="submit-btn" class="info">Add Employee</button>
             </form>
         </div>
-        <div class="child" id="table">
-            <table>
-             <thead>
-                <th class="field">Name</th>
-                <th class="field">Email</th>
-                <th class="field">Emp_id</th>
-                <th class="field">Designation</th>
-                <th class="field">Compony</th>
-             </thead>
+
+        <div class="child form-data" >
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th class="field">Name</th>
+                        <th class="field">Email</th>
+                        <th class="field">Emp_id</th>
+                        <th class="field">Designation</th>
+                        <th class="field">Compony</th>
+                        <th class="field">Options</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbody">
+                    <tr>
+                        <td>Hinata</td>
+                        <td>uzumakihinata@gmail.com</td>
+                        <td>N1121</td>
+                        <td>Ninja</td>
+                        <td>The Leaf</td>
+                        <td>DOM</td>
+                    </tr>
+
+
+                </tbody>
+
             </table>
         </div>
+
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
