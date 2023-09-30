@@ -76,7 +76,7 @@ form {
   border: 3px solid;
   border-radius: 3px;
   max-height: 500px;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .form-data::-webkit-scrollbar {
@@ -84,12 +84,25 @@ form {
   width: 1px;
 }
 
-table,
+
 th,
 td {
   border: 1px solid wheat;
   border-collapse: collapse;
   border-radius: 6px;
   padding: 8px;
+  width: 100%;
+}
+
+.tableHead{
+  position:sticky;
+  top: 0;
+  z-index: 100;
+  background-color: black;
+}
+
+
+.field{
+  border: 3px solid white;
   width: 100%;
 }

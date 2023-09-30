@@ -4,7 +4,7 @@ const employees = [];
 
 //function to add employee in the table.
 function addEmp(emp) {
-  //check for duplicates
+  // check for duplicates
   for (let i = 0; i < employees.length; i++) {
     // selecting a single employee object to check
     let e = employees[i];
@@ -57,3 +57,5 @@ form.addEventListener("submit", (event) => {
 
   // console.log(employee);
 });
+
+
